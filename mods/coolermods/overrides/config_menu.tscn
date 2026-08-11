@@ -1,0 +1,302 @@
+[gd_scene load_steps=30 format=3 uid="uid://prmkehjxi6gv"]
+
+[ext_resource type="Script" uid="uid://24op73s3ugn5" path="res://mods/coolermods/overrides/config_menu.gd" id="1_8jda2"]
+[ext_resource type="Texture2D" uid="uid://cqt1yl4ruvwmr" path="res://assetsNEW/graphics/menu/settings_bg.png" id="2_mlh27"]
+[ext_resource type="Texture2D" uid="uid://dywxdt3oahkpc" path="res://mods/coolermods/icon.png" id="4_wcwch"]
+[ext_resource type="FontFile" uid="uid://bayy88gke8rk2" path="res://assetsNEW/fonts/SuperBubble-Rpaj3.ttf" id="6_smvpm"]
+[ext_resource type="Theme" uid="uid://bckb4biy4kjrn" path="res://mods/coolermods/assets/themes/mod_settings.tres" id="8_xuaiv"]
+[ext_resource type="Theme" uid="uid://crjv5fv10tx15" path="res://assetsNEW/graphics/themes/button_1.tres" id="13_cmjtf"]
+[ext_resource type="PackedScene" uid="uid://4gsl7s37ki34" path="res://assetsNEW/scenes/menu_objects/buttons/real_back_button.tscn" id="14_ld4u1"]
+[ext_resource type="AudioStream" uid="uid://bt0f4cxsajx7v" path="res://assetsNEW/sounds/menu/settings_sound.ogg" id="15_t6joh"]
+[ext_resource type="Script" uid="uid://cn76vskr26ryr" path="res://assetsNEW/scenes/utils/menu_sound_player.gd" id="16_8vxul"]
+
+[sub_resource type="ViewportTexture" id="ViewportTexture_l0qck"]
+viewport_path = NodePath("Background")
+
+[sub_resource type="LabelSettings" id="LabelSettings_sww18"]
+font_size = 24
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_xuaiv"]
+content_margin_left = 12.0
+content_margin_right = 12.0
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_jq7p5"]
+atlas = ExtResource("2_mlh27")
+region = Rect2(0, 0, 512, 512)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_a75u2"]
+atlas = ExtResource("2_mlh27")
+region = Rect2(512, 0, 512, 512)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_r2w42"]
+atlas = ExtResource("2_mlh27")
+region = Rect2(1024, 0, 512, 512)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_mwqso"]
+atlas = ExtResource("2_mlh27")
+region = Rect2(1536, 0, 512, 512)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_svbwa"]
+atlas = ExtResource("2_mlh27")
+region = Rect2(2048, 0, 512, 512)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_2qf4j"]
+atlas = ExtResource("2_mlh27")
+region = Rect2(2560, 0, 512, 512)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_i74so"]
+atlas = ExtResource("2_mlh27")
+region = Rect2(3072, 0, 512, 512)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_cjk41"]
+atlas = ExtResource("2_mlh27")
+region = Rect2(3584, 0, 512, 512)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_c0nqv"]
+atlas = ExtResource("2_mlh27")
+region = Rect2(4096, 0, 512, 512)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ousmm"]
+atlas = ExtResource("2_mlh27")
+region = Rect2(4608, 0, 512, 512)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_sqvo0"]
+atlas = ExtResource("2_mlh27")
+region = Rect2(5120, 0, 512, 512)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_c0f54"]
+atlas = ExtResource("2_mlh27")
+region = Rect2(5632, 0, 512, 512)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ie6he"]
+atlas = ExtResource("2_mlh27")
+region = Rect2(6144, 0, 512, 512)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_n0ntf"]
+atlas = ExtResource("2_mlh27")
+region = Rect2(6656, 0, 512, 512)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_71ded"]
+atlas = ExtResource("2_mlh27")
+region = Rect2(7168, 0, 512, 512)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_w6nsh"]
+atlas = ExtResource("2_mlh27")
+region = Rect2(7680, 0, 512, 512)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_m0b70"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_jq7p5")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_a75u2")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_r2w42")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_mwqso")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_svbwa")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_2qf4j")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_i74so")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_cjk41")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_c0nqv")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ousmm")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_sqvo0")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_c0f54")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ie6he")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_n0ntf")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_71ded")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_w6nsh")
+}],
+"loop": true,
+"name": &"default",
+"speed": 20.0
+}]
+
+[node name="ModConfigMenu" type="Node2D" node_paths=PackedStringArray("_bg_viewport")]
+script = ExtResource("1_8jda2")
+_bg_viewport = NodePath("Background")
+music = -1
+pause_last_scene = false
+hide_last_scene = true
+
+[node name="UILayer" type="CanvasLayer" parent="."]
+
+[node name="Background" type="TextureRect" parent="UILayer"]
+offset_left = 256.0
+offset_right = 768.0
+offset_bottom = 512.0
+texture = SubResource("ViewportTexture_l0qck")
+stretch_mode = 1
+
+[node name="UI" type="Control" parent="UILayer"]
+custom_minimum_size = Vector2(512, 512)
+layout_mode = 3
+anchors_preset = 6
+anchor_left = 1.0
+anchor_top = 0.5
+anchor_right = 1.0
+anchor_bottom = 0.5
+offset_left = -512.0
+offset_top = -256.0
+offset_bottom = 256.0
+grow_horizontal = 0
+grow_vertical = 2
+theme = ExtResource("8_xuaiv")
+
+[node name="VBoxContainer" type="VBoxContainer" parent="UILayer/UI"]
+layout_mode = 2
+offset_right = 512.0
+offset_bottom = 512.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Padding5" type="Control" parent="UILayer/UI/VBoxContainer"]
+custom_minimum_size = Vector2(0, 8)
+layout_mode = 2
+
+[node name="Title" type="HBoxContainer" parent="UILayer/UI/VBoxContainer"]
+custom_minimum_size = Vector2(300, 0)
+layout_mode = 2
+size_flags_horizontal = 4
+theme_override_constants/separation = 6
+alignment = 1
+
+[node name="HeaderIcon" type="TextureRect" parent="UILayer/UI/VBoxContainer/Title"]
+unique_name_in_owner = true
+custom_minimum_size = Vector2(32, 32)
+layout_mode = 2
+size_flags_horizontal = 8
+texture = ExtResource("4_wcwch")
+expand_mode = 1
+stretch_mode = 5
+
+[node name="Header" type="Label" parent="UILayer/UI/VBoxContainer/Title"]
+unique_name_in_owner = true
+custom_minimum_size = Vector2(0, 32)
+layout_mode = 2
+text = "MENU_Settings"
+label_settings = SubResource("LabelSettings_sww18")
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Padding4" type="Control" parent="UILayer/UI/VBoxContainer"]
+custom_minimum_size = Vector2(0, 16)
+layout_mode = 2
+
+[node name="Options" type="ScrollContainer" parent="UILayer/UI/VBoxContainer"]
+custom_minimum_size = Vector2(356, 0)
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 3
+horizontal_scroll_mode = 0
+
+[node name="PanelContainer" type="PanelContainer" parent="UILayer/UI/VBoxContainer/Options"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+theme_override_styles/panel = SubResource("StyleBoxEmpty_xuaiv")
+
+[node name="ConfigElements" type="VBoxContainer" parent="UILayer/UI/VBoxContainer/Options/PanelContainer"]
+unique_name_in_owner = true
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+theme_override_constants/separation = 20
+alignment = 1
+
+[node name="Padding" type="Control" parent="UILayer/UI/VBoxContainer"]
+custom_minimum_size = Vector2(0, 8)
+layout_mode = 2
+
+[node name="Description" type="Label" parent="UILayer/UI/VBoxContainer"]
+unique_name_in_owner = true
+custom_minimum_size = Vector2(384, 64)
+layout_mode = 2
+size_flags_horizontal = 4
+text = "..."
+horizontal_alignment = 1
+vertical_alignment = 1
+autowrap_mode = 3
+
+[node name="Padding2" type="Control" parent="UILayer/UI/VBoxContainer"]
+custom_minimum_size = Vector2(0, 8)
+layout_mode = 2
+
+[node name="SaveButton" type="Button" parent="UILayer/UI/VBoxContainer"]
+unique_name_in_owner = true
+custom_minimum_size = Vector2(256, 48)
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 8
+focus_mode = 0
+theme = ExtResource("13_cmjtf")
+theme_override_constants/outline_size = 5
+theme_override_fonts/font = ExtResource("6_smvpm")
+text = "MENU_SettingsSave"
+
+[node name="Padding3" type="Control" parent="UILayer/UI/VBoxContainer"]
+custom_minimum_size = Vector2(0, 8)
+layout_mode = 2
+
+[node name="REALBackButton" parent="UILayer" node_paths=PackedStringArray("parent") instance=ExtResource("14_ld4u1")]
+custom_minimum_size = Vector2(64, 32)
+offset_left = 264.0
+offset_top = 8.0
+offset_right = 328.0
+offset_bottom = 40.0
+theme_override_font_sizes/font_size = 16
+parent = NodePath("../..")
+GO_TO = 34
+overlay_back = true
+
+[node name="Sounds" type="Node" parent="."]
+
+[node name="SFXBeep" type="AudioStreamPlayer" parent="Sounds"]
+unique_name_in_owner = true
+stream = ExtResource("15_t6joh")
+bus = &"Sound"
+
+[node name="MenuSoundPlayer" type="Node" parent="Sounds"]
+script = ExtResource("16_8vxul")
+
+[node name="Background" type="SubViewport" parent="."]
+
+[node name="BG" type="AnimatedSprite2D" parent="Background"]
+unique_name_in_owner = true
+modulate = Color(1, 0.322943, 0.178478, 1)
+sprite_frames = SubResource("SpriteFrames_m0b70")
+autoplay = "default"
+
+[node name="Camera2D" type="Camera2D" parent="Background"]
+
+[connection signal="gui_input" from="UILayer/UI" to="." method="_on_ui_gui_input"]
+[connection signal="pressed" from="UILayer/UI/VBoxContainer/SaveButton" to="." method="_on_save_set_pressed"]
+[connection signal="pressed" from="UILayer/UI/VBoxContainer/SaveButton" to="Sounds/MenuSoundPlayer" method="play_select"]

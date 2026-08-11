@@ -1,0 +1,46 @@
+GDRE Tools v2.6.0-beta.4
+Windows 10.0.19045, NVIDIA GeForce RTX 4070 Laptop GPU, vulkan
+Opening file: C:/Users/lando/Downloads/uncanny-cat-golf-win64(2)/Uncanny Cat Golf.pck
+WARNING: Duplicate IDs found in cache:
+  uid://ceq4ai4481ln2 -> res://assetsNEW/scenes/game/levels/regular/w2/2_16.tscn
+    Replacing with: res://assetsNEW/scenes/game/levels/regular/w2/2_13.tscn
+   at: GDRESettings::load_pack_uid_cache (modules\gdsdecomp\utility\gdre_settings.cpp:2096)
+Bytecode test for 4.5-dev.5 (ee121ef) failed on line 18: Function declaration error: TK_PR_FUNCTION TK_IDENTIFIER TK_CURLY_BRACKET_CLOSE (expected TK_PR_FUNCTION <identifier> TK_PARENTHESIS_OPEN)
+	 Test failed on file res://assetsNEW/scenes/HUD/horse_meter.gdc
+Bytecode test for 4.5-dev.4 (b59d6be) failed on line 18: Function declaration error: TK_PR_FUNCTION TK_IDENTIFIER TK_CURLY_BRACKET_CLOSE (expected TK_PR_FUNCTION <identifier> TK_PARENTHESIS_OPEN)
+	 Test failed on file res://assetsNEW/scenes/HUD/horse_meter.gdc
+Bytecode test for 4.3.0-stable (77af6ca) failed on line 4: Static declaration error, next token isn't function or var: TK_PERIOD
+	 Test failed on file res://assetsNEW/scenes/game/minigames/meowtos/meowtos_scenes/meowtos_startup.gdc
+ERROR: Failed to detect GDScript revision for bytecode version 100, engine version 4.4, please report this issue on GitHub.
+   at: BytecodeTester::generic_test (modules\gdsdecomp\bytecode\bytecode_tester.cpp:205)
+Guessing bytecode revision from engine version: 4.4.1 (rev 0x77af6ca)
+Loaded 2359 imported files
+Detected Engine Version: 4.4.1
+Detected Bytecode Revision: 4.3.0-stable (77af6ca)
+Verified 4800 files, no errors detected!
+Extracted 4800 files, no errors detected!
+Saved project config.
+
+
+********************************EXPORT REPORT********************************
+
+Totals:                                 
+Decompiled scripts:                     317
+Scripts not decompiled:                 0
+Imported resources for export session:  2359
+Successfully converted:                 2359
+Lossy:                                  112
+Rewrote metadata:                       1542
+Non-importable conversions:             0
+Not converted:                          0
+Failed conversions:                     0
+-------------
+
+
+
+------------------------------------------------------------------------------------
+
+Use Godot editor version 4.4.1 to edit the project.
+
+*******************************************************************************
+

@@ -1,0 +1,72 @@
+{
+	"animate_icons": {
+		"name": "Animate Mod Icons",
+		"description": "Enables animated mod icons in the mods menu. This is applied when the mods menu is reloaded.",
+		"default": true
+	},
+	"config_dancer": {
+		"name": "Show Dancing Canny in Config Menus",
+		"description": "Will you really ruin their rave?\n( hides the dancing canny when in a config menu. )",
+		"default": true
+	},
+	"ex_header": {
+		"header": 1,
+		"name": "Config Examples",
+		"description": "Headers can also have descriptions!"
+	},
+	"ex_number": {
+		"name": "Number Option",
+		"description": "I am a description. I show up when this option is hovered over. Numbers will always default to SpinBoxes.",
+		"default": 1
+	},
+	"ex_string": {
+		"name": "String Option",
+		"description": "Strings default to Line Edits.",
+		"default": "String"
+	},
+	"ex_bool": {
+		"name": "Boolean Option",
+		"description": "Booleans can only be checkboxes.",
+		"default": false
+	},
+	"typehint_header": {
+		"header": 1,
+		"name": "Type Hints",
+		"description": "More advanced mod config options that use type hints."
+	},
+	"ex_slider": {
+		"name": "Slider",
+		"description": "A horizontal slider. You can set the min, max, and step.",
+		"default": 1,
+		"type_hint": {
+			"id": "slider",
+			"min": 0,
+			"max": 10,
+			"step": 1
+		}
+	},
+	"ex_option_picker": {
+		"default": 0,
+		"name": "Options Picker",
+		"description": "The value of this option corresponds to the NUMERICAL INDEX of the option, and not the name!",
+		"type_hint": {
+			"id": "option_picker",
+			"options": [
+				"Options are zero-indexed!",
+				"Option 2",
+				"And so on..."
+			]
+		}
+	},
+	"ex_spinbox": {
+		"name": "Spin Box",
+		"description": "A spin box. You can set the min, max, and step.",
+		"default": 1,
+		"type_hint": {
+			"id": "spin_box",
+			"min": 0,
+			"max": 10,
+			"step": 1,
+		}
+	}
+}

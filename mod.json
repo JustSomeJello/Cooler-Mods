@@ -1,0 +1,15 @@
+{
+	"id": "justsomejello.coolermods",
+	"version": "2.1.1",
+	"name": "Cooler Mods",
+	"author": "JustSomeJello",
+	"description": "Makes your mods way [rainbow speed=-1.0][font embolden=1.0]COOLER!!![/font][/rainbow]
+	- Mod-Exclusive Config Menus
+	- Custom Mod Icons
+	- Visible Descriptions
+	- BBCode support for mod name, author, and description
+	- Custom ModButton backgrounds
+	- UI Tweaks",
+	"mod_script": "res://mods/coolermods/coolermods.gd",
+	"dependencies": {}
+}

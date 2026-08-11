@@ -1,0 +1,312 @@
+[gd_scene load_steps=29 format=3 uid="uid://gs5ufph26326"]
+
+[ext_resource type="Script" uid="uid://bl7ji22yq4lad" path="res://mods/coolermods/overrides/mods_menu.gd" id="1_emtek"]
+[ext_resource type="Texture2D" uid="uid://cqt1yl4ruvwmr" path="res://assetsNEW/graphics/menu/settings_bg.png" id="2_842ug"]
+[ext_resource type="PackedScene" uid="uid://4gsl7s37ki34" path="res://assetsNEW/scenes/menu_objects/buttons/real_back_button.tscn" id="3_ue44g"]
+[ext_resource type="FontFile" uid="uid://b81yjagt2wxnx" path="res://assetsNEW/fonts/Omnes Pro Bold.otf" id="4_7oxr6"]
+[ext_resource type="Theme" uid="uid://dcf4pbqfhwr1g" path="res://assetsNEW/graphics/themes/settings.tres" id="5_gt15n"]
+[ext_resource type="Theme" uid="uid://crjv5fv10tx15" path="res://assetsNEW/graphics/themes/button_1.tres" id="6_j10iu"]
+[ext_resource type="FontFile" uid="uid://bayy88gke8rk2" path="res://assetsNEW/fonts/SuperBubble-Rpaj3.ttf" id="7_bogt4"]
+[ext_resource type="AudioStream" uid="uid://bektb03jcgu0x" path="res://assetsNEW/sounds/player/cancel.ogg" id="8_jhs0k"]
+[ext_resource type="AudioStream" uid="uid://cyv4fdxfy2i2p" path="res://assetsNEW/music/musCredits.ogg" id="9_10dbx"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_jq7p5"]
+atlas = ExtResource("2_842ug")
+region = Rect2(0, 0, 512, 512)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_a75u2"]
+atlas = ExtResource("2_842ug")
+region = Rect2(512, 0, 512, 512)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_r2w42"]
+atlas = ExtResource("2_842ug")
+region = Rect2(1024, 0, 512, 512)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_mwqso"]
+atlas = ExtResource("2_842ug")
+region = Rect2(1536, 0, 512, 512)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_svbwa"]
+atlas = ExtResource("2_842ug")
+region = Rect2(2048, 0, 512, 512)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_2qf4j"]
+atlas = ExtResource("2_842ug")
+region = Rect2(2560, 0, 512, 512)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_i74so"]
+atlas = ExtResource("2_842ug")
+region = Rect2(3072, 0, 512, 512)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_cjk41"]
+atlas = ExtResource("2_842ug")
+region = Rect2(3584, 0, 512, 512)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_c0nqv"]
+atlas = ExtResource("2_842ug")
+region = Rect2(4096, 0, 512, 512)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ousmm"]
+atlas = ExtResource("2_842ug")
+region = Rect2(4608, 0, 512, 512)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_sqvo0"]
+atlas = ExtResource("2_842ug")
+region = Rect2(5120, 0, 512, 512)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_c0f54"]
+atlas = ExtResource("2_842ug")
+region = Rect2(5632, 0, 512, 512)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ie6he"]
+atlas = ExtResource("2_842ug")
+region = Rect2(6144, 0, 512, 512)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_n0ntf"]
+atlas = ExtResource("2_842ug")
+region = Rect2(6656, 0, 512, 512)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_71ded"]
+atlas = ExtResource("2_842ug")
+region = Rect2(7168, 0, 512, 512)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_w6nsh"]
+atlas = ExtResource("2_842ug")
+region = Rect2(7680, 0, 512, 512)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_p21cc"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_jq7p5")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_a75u2")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_r2w42")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_mwqso")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_svbwa")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_2qf4j")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_i74so")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_cjk41")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_c0nqv")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ousmm")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_sqvo0")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_c0f54")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ie6he")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_n0ntf")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_71ded")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_w6nsh")
+}],
+"loop": true,
+"name": &"default",
+"speed": 20.0
+}]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_fj857"]
+
+[sub_resource type="StyleBoxLine" id="StyleBoxLine_fj857"]
+color = Color(1, 1, 1, 1)
+grow_begin = -50.0
+grow_end = -50.0
+
+[node name="CoolerModsMenu" type="Node2D" node_paths=PackedStringArray("_disabled_mods", "_enabled_mods", "_activation_toggle")]
+script = ExtResource("1_emtek")
+_disabled_mods = NodePath("CanvasLayer/Control/VBoxContainer/HBoxContainer/Available/ScrollContainer/DisabledMods")
+_enabled_mods = NodePath("CanvasLayer/Control/VBoxContainer/HBoxContainer/Enabled/ScrollContainer/EnabledMods")
+_activation_toggle = NodePath("CanvasLayer/Control/VBoxContainer/HBoxContainer2/ModsEnabled")
+music = -2
+
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+layer = 15
+
+[node name="BG" type="AnimatedSprite2D" parent="CanvasLayer"]
+modulate = Color(0.631373, 0.180392, 1, 1)
+position = Vector2(512, 256)
+sprite_frames = SubResource("SpriteFrames_p21cc")
+autoplay = "default"
+
+[node name="Control" type="Control" parent="CanvasLayer"]
+custom_minimum_size = Vector2(512, 512)
+layout_mode = 3
+anchors_preset = 6
+anchor_left = 1.0
+anchor_top = 0.5
+anchor_right = 1.0
+anchor_bottom = 0.5
+offset_left = -512.0
+offset_top = -256.0
+offset_bottom = 256.0
+grow_horizontal = 0
+grow_vertical = 2
+
+[node name="VBoxContainer" type="VBoxContainer" parent="CanvasLayer/Control"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Control" type="Control" parent="CanvasLayer/Control/VBoxContainer"]
+custom_minimum_size = Vector2(0, 64)
+layout_mode = 2
+
+[node name="REALBackButton" parent="CanvasLayer/Control/VBoxContainer/Control" node_paths=PackedStringArray("parent") instance=ExtResource("3_ue44g")]
+layout_mode = 0
+offset_left = 8.0
+offset_top = 8.0
+offset_right = 72.0
+offset_bottom = 40.0
+parent = NodePath("../../../../..")
+GO_TO = 2
+with_state = 1
+
+[node name="Header" type="Label" parent="CanvasLayer/Control/VBoxContainer/Control"]
+layout_mode = 0
+offset_right = 512.0
+offset_bottom = 64.0
+theme_override_fonts/font = ExtResource("4_7oxr6")
+text = "We can make something entirely new."
+horizontal_alignment = 1
+vertical_alignment = 1
+autowrap_mode = 3
+
+[node name="HBoxContainer2" type="HBoxContainer" parent="CanvasLayer/Control/VBoxContainer"]
+layout_mode = 2
+
+[node name="Padding" type="Control" parent="CanvasLayer/Control/VBoxContainer/HBoxContainer2"]
+custom_minimum_size = Vector2(8, 0)
+layout_mode = 2
+
+[node name="Label" type="Label" parent="CanvasLayer/Control/VBoxContainer/HBoxContainer2"]
+layout_mode = 2
+theme_override_fonts/font = ExtResource("4_7oxr6")
+text = "Mods Enabled:"
+
+[node name="Padding3" type="Control" parent="CanvasLayer/Control/VBoxContainer/HBoxContainer2"]
+custom_minimum_size = Vector2(8, 0)
+layout_mode = 2
+
+[node name="ModsEnabled" type="CheckButton" parent="CanvasLayer/Control/VBoxContainer/HBoxContainer2"]
+unique_name_in_owner = true
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+theme = ExtResource("5_gt15n")
+
+[node name="Apply" type="Button" parent="CanvasLayer/Control/VBoxContainer/HBoxContainer2"]
+layout_mode = 2
+size_flags_horizontal = 10
+theme = ExtResource("6_j10iu")
+theme_override_constants/outline_size = 5
+theme_override_fonts/font = ExtResource("7_bogt4")
+text = "APPLY AND RESTART"
+
+[node name="Padding2" type="Control" parent="CanvasLayer/Control/VBoxContainer/HBoxContainer2"]
+custom_minimum_size = Vector2(8, 0)
+layout_mode = 2
+
+[node name="HSep" type="HSeparator" parent="CanvasLayer/Control/VBoxContainer"]
+layout_mode = 2
+theme_override_constants/separation = 8
+theme_override_styles/separator = SubResource("StyleBoxEmpty_fj857")
+
+[node name="HBoxContainer" type="HBoxContainer" parent="CanvasLayer/Control/VBoxContainer"]
+layout_mode = 2
+size_flags_vertical = 3
+theme_override_constants/separation = 16
+
+[node name="Available" type="VBoxContainer" parent="CanvasLayer/Control/VBoxContainer/HBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="Label" type="Label" parent="CanvasLayer/Control/VBoxContainer/HBoxContainer/Available"]
+layout_mode = 2
+theme_override_fonts/font = ExtResource("4_7oxr6")
+text = "Available Mods"
+horizontal_alignment = 1
+
+[node name="HSep" type="HSeparator" parent="CanvasLayer/Control/VBoxContainer/HBoxContainer/Available"]
+layout_mode = 2
+theme_override_constants/separation = 8
+theme_override_styles/separator = SubResource("StyleBoxLine_fj857")
+
+[node name="ScrollContainer" type="ScrollContainer" parent="CanvasLayer/Control/VBoxContainer/HBoxContainer/Available"]
+layout_mode = 2
+size_flags_vertical = 3
+follow_focus = true
+
+[node name="DisabledMods" type="VBoxContainer" parent="CanvasLayer/Control/VBoxContainer/HBoxContainer/Available/ScrollContainer"]
+unique_name_in_owner = true
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+
+[node name="Enabled" type="VBoxContainer" parent="CanvasLayer/Control/VBoxContainer/HBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="Label" type="Label" parent="CanvasLayer/Control/VBoxContainer/HBoxContainer/Enabled"]
+layout_mode = 2
+theme_override_fonts/font = ExtResource("4_7oxr6")
+text = "Enabled Mods"
+horizontal_alignment = 1
+
+[node name="HSep" type="HSeparator" parent="CanvasLayer/Control/VBoxContainer/HBoxContainer/Enabled"]
+layout_mode = 2
+theme_override_constants/separation = 8
+theme_override_styles/separator = SubResource("StyleBoxLine_fj857")
+
+[node name="ScrollContainer" type="ScrollContainer" parent="CanvasLayer/Control/VBoxContainer/HBoxContainer/Enabled"]
+layout_mode = 2
+size_flags_vertical = 3
+follow_focus = true
+
+[node name="EnabledMods" type="VBoxContainer" parent="CanvasLayer/Control/VBoxContainer/HBoxContainer/Enabled/ScrollContainer"]
+unique_name_in_owner = true
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+
+[node name="Sounds" type="Node" parent="."]
+
+[node name="sound" type="AudioStreamPlayer" parent="Sounds"]
+stream = ExtResource("8_jhs0k")
+bus = &"Sound"
+
+[node name="mus" type="AudioStreamPlayer" parent="Sounds"]
+stream = ExtResource("9_10dbx")
+autoplay = true
+bus = &"Music"
+
+[connection signal="pressed" from="CanvasLayer/Control/VBoxContainer/Control/REALBackButton" to="." method="_on_real_back_button_pressed"]
+[connection signal="toggled" from="CanvasLayer/Control/VBoxContainer/HBoxContainer2/ModsEnabled" to="." method="_on_mods_enabled_toggled"]
+[connection signal="pressed" from="CanvasLayer/Control/VBoxContainer/HBoxContainer2/Apply" to="." method="_on_apply_pressed"]

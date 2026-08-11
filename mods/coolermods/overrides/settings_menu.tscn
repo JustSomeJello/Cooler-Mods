@@ -1,0 +1,554 @@
+[gd_scene load_steps=37 format=3 uid="uid://c3m5v2ntn4u7k"]
+
+[ext_resource type="Script" uid="uid://nwqy8fjf0o5" path="res://assetsNEW/scenes/game/menus/settings_menu.gd" id="1_2an6v"]
+[ext_resource type="Texture2D" uid="uid://cqt1yl4ruvwmr" path="res://assetsNEW/graphics/menu/settings_bg.png" id="2_dut4e"]
+[ext_resource type="Theme" uid="uid://dcf4pbqfhwr1g" path="res://assetsNEW/graphics/themes/settings.tres" id="3_5u0q6"]
+[ext_resource type="Texture2D" uid="uid://bb302c5iodtjq" path="res://assetsNEW/graphics/editor/peak.png" id="4_5ums7"]
+[ext_resource type="Texture2D" uid="uid://cmxsq6jjvafcm" path="res://assetsNEW/graphics/editor/norank.png" id="5_e2jmk"]
+[ext_resource type="FontFile" uid="uid://bayy88gke8rk2" path="res://assetsNEW/fonts/SuperBubble-Rpaj3.ttf" id="6_1xkwp"]
+[ext_resource type="Texture2D" uid="uid://b460r5jc3rpsd" path="res://assetsNEW/graphics/menu/lang_flags/flag_en.png" id="7_tkp08"]
+[ext_resource type="Texture2D" uid="uid://dbakh8tmywf8w" path="res://assetsNEW/graphics/menu/lang_flags/flag_fr.png" id="8_5ava6"]
+[ext_resource type="Texture2D" uid="uid://bsn26xecpqcyi" path="res://assetsNEW/graphics/menu/lang_flags/flag_ru.png" id="9_u36hh"]
+[ext_resource type="Texture2D" uid="uid://c807sy3ijhv35" path="res://assetsNEW/graphics/menu/lang_flags/flag_ja.png" id="10_f2v5r"]
+[ext_resource type="Texture2D" uid="uid://cekp4thr3v4na" path="res://assetsNEW/graphics/menu/lang_flags/flag_ro.png" id="11_p7ypd"]
+[ext_resource type="Texture2D" uid="uid://cgbke5qr6nbak" path="res://assetsNEW/graphics/menu/lang_flags/flag_bi.png" id="12_frt03"]
+[ext_resource type="Theme" uid="uid://crjv5fv10tx15" path="res://assetsNEW/graphics/themes/button_1.tres" id="13_vttko"]
+[ext_resource type="PackedScene" uid="uid://4gsl7s37ki34" path="res://assetsNEW/scenes/menu_objects/buttons/real_back_button.tscn" id="14_2ccms"]
+[ext_resource type="Texture2D" uid="uid://doysfyt0ulu1h" path="res://assetsNEW/graphics/menu/main_menu/icon_main_extra.png" id="15_paslb"]
+[ext_resource type="FontFile" uid="uid://cep5kfn2ih83v" path="res://assetsNEW/fonts/impact.ttf" id="16_hpeut"]
+[ext_resource type="AudioStream" uid="uid://bt0f4cxsajx7v" path="res://assetsNEW/sounds/menu/settings_sound.ogg" id="17_tjtso"]
+[ext_resource type="Script" uid="uid://cn76vskr26ryr" path="res://assetsNEW/scenes/utils/menu_sound_player.gd" id="18_rf4kf"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_jq7p5"]
+atlas = ExtResource("2_dut4e")
+region = Rect2(0, 0, 512, 512)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_a75u2"]
+atlas = ExtResource("2_dut4e")
+region = Rect2(512, 0, 512, 512)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_r2w42"]
+atlas = ExtResource("2_dut4e")
+region = Rect2(1024, 0, 512, 512)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_mwqso"]
+atlas = ExtResource("2_dut4e")
+region = Rect2(1536, 0, 512, 512)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_svbwa"]
+atlas = ExtResource("2_dut4e")
+region = Rect2(2048, 0, 512, 512)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_2qf4j"]
+atlas = ExtResource("2_dut4e")
+region = Rect2(2560, 0, 512, 512)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_i74so"]
+atlas = ExtResource("2_dut4e")
+region = Rect2(3072, 0, 512, 512)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_cjk41"]
+atlas = ExtResource("2_dut4e")
+region = Rect2(3584, 0, 512, 512)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_c0nqv"]
+atlas = ExtResource("2_dut4e")
+region = Rect2(4096, 0, 512, 512)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ousmm"]
+atlas = ExtResource("2_dut4e")
+region = Rect2(4608, 0, 512, 512)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_sqvo0"]
+atlas = ExtResource("2_dut4e")
+region = Rect2(5120, 0, 512, 512)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_c0f54"]
+atlas = ExtResource("2_dut4e")
+region = Rect2(5632, 0, 512, 512)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ie6he"]
+atlas = ExtResource("2_dut4e")
+region = Rect2(6144, 0, 512, 512)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_n0ntf"]
+atlas = ExtResource("2_dut4e")
+region = Rect2(6656, 0, 512, 512)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_71ded"]
+atlas = ExtResource("2_dut4e")
+region = Rect2(7168, 0, 512, 512)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_w6nsh"]
+atlas = ExtResource("2_dut4e")
+region = Rect2(7680, 0, 512, 512)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_m0b70"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_jq7p5")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_a75u2")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_r2w42")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_mwqso")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_svbwa")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_2qf4j")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_i74so")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_cjk41")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_c0nqv")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ousmm")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_sqvo0")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_c0f54")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ie6he")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_n0ntf")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_71ded")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_w6nsh")
+}],
+"loop": true,
+"name": &"default",
+"speed": 20.0
+}]
+
+[sub_resource type="LabelSettings" id="LabelSettings_sww18"]
+font_size = 24
+
+[node name="ModConfigMenu" type="Node2D"]
+script = ExtResource("1_2an6v")
+music = -1
+pause_last_scene = false
+hide_last_scene = true
+
+[node name="Background" type="CanvasLayer" parent="."]
+layer = 20
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="Background"]
+modulate = Color(1, 0.322943, 0.178478, 1)
+position = Vector2(512, 256)
+sprite_frames = SubResource("SpriteFrames_m0b70")
+autoplay = "default"
+
+[node name="UILayer" type="CanvasLayer" parent="."]
+layer = 20
+
+[node name="UI" type="Control" parent="UILayer"]
+custom_minimum_size = Vector2(512, 512)
+layout_mode = 3
+anchors_preset = 6
+anchor_left = 1.0
+anchor_top = 0.5
+anchor_right = 1.0
+anchor_bottom = 0.5
+offset_left = -40.0
+offset_top = -20.0
+offset_bottom = 20.0
+grow_horizontal = 0
+grow_vertical = 2
+theme = ExtResource("3_5u0q6")
+
+[node name="VBoxContainer" type="VBoxContainer" parent="UILayer/UI"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Header" type="Label" parent="UILayer/UI/VBoxContainer"]
+custom_minimum_size = Vector2(0, 64)
+layout_mode = 2
+text = "MENU_Settings"
+label_settings = SubResource("LabelSettings_sww18")
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Padding4" type="Control" parent="UILayer/UI/VBoxContainer"]
+custom_minimum_size = Vector2(0, 32)
+layout_mode = 2
+
+[node name="Columns" type="HBoxContainer" parent="UILayer/UI/VBoxContainer"]
+custom_minimum_size = Vector2(480, 0)
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 3
+theme_override_constants/separation = 48
+alignment = 1
+
+[node name="LeftColumn" type="VBoxContainer" parent="UILayer/UI/VBoxContainer/Columns"]
+layout_mode = 2
+theme_override_constants/separation = 8
+
+[node name="Fullscreen" type="HBoxContainer" parent="UILayer/UI/VBoxContainer/Columns/LeftColumn"]
+custom_minimum_size = Vector2(0, 32)
+layout_mode = 2
+size_flags_horizontal = 0
+mouse_filter = 0
+theme_override_constants/separation = 8
+alignment = 1
+
+[node name="Label" type="Label" parent="UILayer/UI/VBoxContainer/Columns/LeftColumn/Fullscreen"]
+layout_mode = 2
+size_flags_horizontal = 6
+text = "MENU_SettingsFullscreen"
+horizontal_alignment = 2
+
+[node name="FullscreenToggle" type="CheckButton" parent="UILayer/UI/VBoxContainer/Columns/LeftColumn/Fullscreen"]
+unique_name_in_owner = true
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+theme_override_icons/checked = ExtResource("4_5ums7")
+theme_override_icons/unchecked = ExtResource("5_e2jmk")
+
+[node name="Language" type="VBoxContainer" parent="UILayer/UI/VBoxContainer/Columns/LeftColumn"]
+visible = false
+custom_minimum_size = Vector2(0, 40)
+layout_mode = 2
+size_flags_horizontal = 0
+mouse_filter = 0
+theme_override_constants/separation = 4
+alignment = 1
+
+[node name="Label" type="Label" parent="UILayer/UI/VBoxContainer/Columns/LeftColumn/Language"]
+layout_mode = 2
+text = "MENU_SettingsLang"
+
+[node name="LangSelector" type="OptionButton" parent="UILayer/UI/VBoxContainer/Columns/LeftColumn/Language"]
+unique_name_in_owner = true
+custom_minimum_size = Vector2(128, 0)
+layout_mode = 2
+size_flags_horizontal = 0
+mouse_filter = 1
+theme_override_fonts/font = ExtResource("6_1xkwp")
+theme_override_font_sizes/font_size = 0
+selected = 0
+fit_to_longest_item = false
+item_count = 6
+popup/item_0/text = "MENU_Lang_en"
+popup/item_0/icon = ExtResource("7_tkp08")
+popup/item_0/id = 0
+popup/item_1/text = "MENU_Lang_fr"
+popup/item_1/icon = ExtResource("8_5ava6")
+popup/item_1/id = 1
+popup/item_2/text = "MENU_Lang_ru"
+popup/item_2/icon = ExtResource("9_u36hh")
+popup/item_2/id = 2
+popup/item_3/text = "MENU_Lang_ja"
+popup/item_3/icon = ExtResource("10_f2v5r")
+popup/item_3/id = 3
+popup/item_4/text = "MENU_Lang_ro"
+popup/item_4/icon = ExtResource("11_p7ypd")
+popup/item_4/id = 4
+popup/item_5/text = "MENU_Lang_bi"
+popup/item_5/icon = ExtResource("12_frt03")
+popup/item_5/id = 5
+
+[node name="Sensitivity" type="VBoxContainer" parent="UILayer/UI/VBoxContainer/Columns/LeftColumn"]
+custom_minimum_size = Vector2(0, 40)
+layout_mode = 2
+mouse_filter = 0
+theme_override_constants/separation = 4
+alignment = 1
+
+[node name="Labels" type="HBoxContainer" parent="UILayer/UI/VBoxContainer/Columns/LeftColumn/Sensitivity"]
+layout_mode = 2
+size_flags_horizontal = 8
+alignment = 2
+
+[node name="Label" type="Label" parent="UILayer/UI/VBoxContainer/Columns/LeftColumn/Sensitivity/Labels"]
+layout_mode = 2
+size_flags_horizontal = 8
+text = "MENU_SettingsSensitivity"
+
+[node name="SensitivityPercent" type="Label" parent="UILayer/UI/VBoxContainer/Columns/LeftColumn/Sensitivity/Labels"]
+unique_name_in_owner = true
+custom_minimum_size = Vector2(40, 0)
+layout_mode = 2
+size_flags_horizontal = 8
+text = "100%"
+horizontal_alignment = 2
+
+[node name="SensitivitySlider" type="HSlider" parent="UILayer/UI/VBoxContainer/Columns/LeftColumn/Sensitivity"]
+unique_name_in_owner = true
+custom_minimum_size = Vector2(128, 0)
+layout_mode = 2
+max_value = 2.0
+step = 0.2
+value = 1.0
+
+[node name="InvertShot" type="HBoxContainer" parent="UILayer/UI/VBoxContainer/Columns/LeftColumn"]
+custom_minimum_size = Vector2(0, 32)
+layout_mode = 2
+size_flags_horizontal = 0
+mouse_filter = 0
+theme_override_constants/separation = 8
+alignment = 1
+
+[node name="Label" type="Label" parent="UILayer/UI/VBoxContainer/Columns/LeftColumn/InvertShot"]
+layout_mode = 2
+size_flags_horizontal = 6
+text = "MENU_SettingsInvertShot"
+horizontal_alignment = 2
+
+[node name="InvertShotToggle" type="CheckButton" parent="UILayer/UI/VBoxContainer/Columns/LeftColumn/InvertShot"]
+unique_name_in_owner = true
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+theme_override_icons/checked = ExtResource("4_5ums7")
+theme_override_icons/unchecked = ExtResource("5_e2jmk")
+
+[node name="BufferShot" type="HBoxContainer" parent="UILayer/UI/VBoxContainer/Columns/LeftColumn"]
+custom_minimum_size = Vector2(0, 32)
+layout_mode = 2
+size_flags_horizontal = 0
+mouse_filter = 0
+theme_override_constants/separation = 8
+alignment = 1
+
+[node name="Label" type="Label" parent="UILayer/UI/VBoxContainer/Columns/LeftColumn/BufferShot"]
+layout_mode = 2
+size_flags_horizontal = 6
+text = "MENU_SettingsBufferShot"
+horizontal_alignment = 2
+
+[node name="BufferShotToggle" type="CheckButton" parent="UILayer/UI/VBoxContainer/Columns/LeftColumn/BufferShot"]
+unique_name_in_owner = true
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+theme_override_icons/checked = ExtResource("4_5ums7")
+theme_override_icons/unchecked = ExtResource("5_e2jmk")
+
+[node name="RightColumn" type="VBoxContainer" parent="UILayer/UI/VBoxContainer/Columns"]
+layout_mode = 2
+theme_override_constants/separation = 8
+
+[node name="MasterVolume" type="VBoxContainer" parent="UILayer/UI/VBoxContainer/Columns/RightColumn"]
+custom_minimum_size = Vector2(0, 40)
+layout_mode = 2
+mouse_filter = 0
+theme_override_constants/separation = 4
+alignment = 1
+
+[node name="Labels" type="HBoxContainer" parent="UILayer/UI/VBoxContainer/Columns/RightColumn/MasterVolume"]
+layout_mode = 2
+size_flags_horizontal = 8
+alignment = 2
+
+[node name="Label" type="Label" parent="UILayer/UI/VBoxContainer/Columns/RightColumn/MasterVolume/Labels"]
+layout_mode = 2
+size_flags_horizontal = 8
+text = "MENU_SettingsMasterVol"
+
+[node name="MasterPercent" type="Label" parent="UILayer/UI/VBoxContainer/Columns/RightColumn/MasterVolume/Labels"]
+unique_name_in_owner = true
+custom_minimum_size = Vector2(40, 0)
+layout_mode = 2
+size_flags_horizontal = 8
+text = "100%"
+horizontal_alignment = 2
+
+[node name="MasterSlider" type="HSlider" parent="UILayer/UI/VBoxContainer/Columns/RightColumn/MasterVolume"]
+unique_name_in_owner = true
+custom_minimum_size = Vector2(128, 0)
+layout_mode = 2
+size_flags_horizontal = 8
+max_value = 1.0
+step = 0.05
+value = 1.0
+
+[node name="MusicVolume" type="VBoxContainer" parent="UILayer/UI/VBoxContainer/Columns/RightColumn"]
+custom_minimum_size = Vector2(0, 40)
+layout_mode = 2
+mouse_filter = 0
+theme_override_constants/separation = 4
+alignment = 1
+
+[node name="Labels" type="HBoxContainer" parent="UILayer/UI/VBoxContainer/Columns/RightColumn/MusicVolume"]
+layout_mode = 2
+size_flags_horizontal = 8
+alignment = 2
+
+[node name="Label" type="Label" parent="UILayer/UI/VBoxContainer/Columns/RightColumn/MusicVolume/Labels"]
+layout_mode = 2
+size_flags_horizontal = 8
+text = "MENU_SettingsMusicVol"
+
+[node name="MusicPercent" type="Label" parent="UILayer/UI/VBoxContainer/Columns/RightColumn/MusicVolume/Labels"]
+unique_name_in_owner = true
+custom_minimum_size = Vector2(40, 0)
+layout_mode = 2
+size_flags_horizontal = 8
+text = "100%"
+horizontal_alignment = 2
+
+[node name="MusicSlider" type="HSlider" parent="UILayer/UI/VBoxContainer/Columns/RightColumn/MusicVolume"]
+unique_name_in_owner = true
+custom_minimum_size = Vector2(128, 0)
+layout_mode = 2
+size_flags_horizontal = 8
+max_value = 1.0
+step = 0.05
+value = 1.0
+
+[node name="SoundVolume" type="VBoxContainer" parent="UILayer/UI/VBoxContainer/Columns/RightColumn"]
+custom_minimum_size = Vector2(0, 40)
+layout_mode = 2
+mouse_filter = 0
+theme_override_constants/separation = 4
+alignment = 1
+
+[node name="Labels" type="HBoxContainer" parent="UILayer/UI/VBoxContainer/Columns/RightColumn/SoundVolume"]
+layout_mode = 2
+size_flags_horizontal = 8
+alignment = 2
+
+[node name="Label" type="Label" parent="UILayer/UI/VBoxContainer/Columns/RightColumn/SoundVolume/Labels"]
+layout_mode = 2
+size_flags_horizontal = 8
+text = "MENU_SettingsSoundVol"
+
+[node name="SoundPercent" type="Label" parent="UILayer/UI/VBoxContainer/Columns/RightColumn/SoundVolume/Labels"]
+unique_name_in_owner = true
+custom_minimum_size = Vector2(40, 0)
+layout_mode = 2
+size_flags_horizontal = 8
+text = "100%"
+horizontal_alignment = 2
+
+[node name="SoundSlider" type="HSlider" parent="UILayer/UI/VBoxContainer/Columns/RightColumn/SoundVolume"]
+unique_name_in_owner = true
+custom_minimum_size = Vector2(128, 0)
+layout_mode = 2
+size_flags_horizontal = 8
+max_value = 1.0
+step = 0.05
+value = 1.0
+
+[node name="Padding" type="Control" parent="UILayer/UI/VBoxContainer"]
+custom_minimum_size = Vector2(0, 8)
+layout_mode = 2
+
+[node name="Description" type="Label" parent="UILayer/UI/VBoxContainer"]
+unique_name_in_owner = true
+custom_minimum_size = Vector2(384, 64)
+layout_mode = 2
+size_flags_horizontal = 4
+text = "..."
+horizontal_alignment = 1
+vertical_alignment = 1
+autowrap_mode = 3
+
+[node name="Padding2" type="Control" parent="UILayer/UI/VBoxContainer"]
+custom_minimum_size = Vector2(0, 8)
+layout_mode = 2
+
+[node name="SaveButton" type="Button" parent="UILayer/UI/VBoxContainer"]
+unique_name_in_owner = true
+custom_minimum_size = Vector2(256, 48)
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 8
+focus_mode = 0
+theme = ExtResource("13_vttko")
+theme_override_constants/outline_size = 5
+theme_override_fonts/font = ExtResource("6_1xkwp")
+text = "MENU_SettingsSave"
+
+[node name="Padding3" type="Control" parent="UILayer/UI/VBoxContainer"]
+custom_minimum_size = Vector2(0, 8)
+layout_mode = 2
+
+[node name="REALBackButton" parent="UILayer" node_paths=PackedStringArray("parent") instance=ExtResource("14_2ccms")]
+offset_left = 264.0
+offset_top = 8.0
+offset_right = 328.0
+offset_bottom = 40.0
+parent = NodePath("../..")
+GO_TO = 2
+overlay_back = true
+
+[node name="ModsButton" type="TextureButton" parent="UILayer"]
+offset_left = 704.0
+offset_top = 448.0
+offset_right = 752.0
+offset_bottom = 512.0
+
+[node name="Sprite2D" type="Sprite2D" parent="UILayer/ModsButton"]
+position = Vector2(24, 24)
+scale = Vector2(0.375, 0.375)
+texture = ExtResource("15_paslb")
+
+[node name="Label" type="Label" parent="UILayer/ModsButton"]
+layout_mode = 0
+offset_top = 40.0
+offset_right = 48.0
+offset_bottom = 61.0
+theme_override_colors/font_outline_color = Color(0, 0.17, 0.153, 1)
+theme_override_constants/outline_size = 8
+theme_override_fonts/font = ExtResource("16_hpeut")
+theme_override_font_sizes/font_size = 16
+text = "MODS"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Sounds" type="Node" parent="."]
+
+[node name="SFXBeep" type="AudioStreamPlayer" parent="Sounds"]
+unique_name_in_owner = true
+stream = ExtResource("17_tjtso")
+bus = &"Sound"
+
+[node name="MenuSoundPlayer" type="Node" parent="Sounds"]
+script = ExtResource("18_rf4kf")
+
+[connection signal="gui_input" from="UILayer/UI" to="." method="_on_ui_gui_input"]
+[connection signal="mouse_entered" from="UILayer/UI/VBoxContainer/Columns/LeftColumn/Fullscreen" to="UILayer/UI/VBoxContainer/Description" method="set_text" binds= ["MENU_SettingsFullscreen_D"]]
+[connection signal="toggled" from="UILayer/UI/VBoxContainer/Columns/LeftColumn/Fullscreen/FullscreenToggle" to="." method="_on_fullscreen_toggle_toggled"]
+[connection signal="mouse_entered" from="UILayer/UI/VBoxContainer/Columns/LeftColumn/Language" to="UILayer/UI/VBoxContainer/Description" method="set_text" binds= ["MENU_SettingsLang_D"]]
+[connection signal="item_selected" from="UILayer/UI/VBoxContainer/Columns/LeftColumn/Language/LangSelector" to="." method="_on_lang_selector_item_selected"]
+[connection signal="mouse_entered" from="UILayer/UI/VBoxContainer/Columns/LeftColumn/Sensitivity" to="UILayer/UI/VBoxContainer/Description" method="set_text" binds= ["MENU_SettingsSensitivity_D"]]
+[connection signal="value_changed" from="UILayer/UI/VBoxContainer/Columns/LeftColumn/Sensitivity/SensitivitySlider" to="." method="_on_sensitivity_slider_value_changed"]
+[connection signal="mouse_entered" from="UILayer/UI/VBoxContainer/Columns/LeftColumn/InvertShot" to="UILayer/UI/VBoxContainer/Description" method="set_text" binds= ["MENU_SettingsInvertShot_D"]]
+[connection signal="toggled" from="UILayer/UI/VBoxContainer/Columns/LeftColumn/InvertShot/InvertShotToggle" to="." method="_on_invert_shot_toggle_toggled"]
+[connection signal="mouse_entered" from="UILayer/UI/VBoxContainer/Columns/LeftColumn/BufferShot" to="UILayer/UI/VBoxContainer/Description" method="set_text" binds= ["MENU_SettingsBufferShot_D"]]
+[connection signal="toggled" from="UILayer/UI/VBoxContainer/Columns/LeftColumn/BufferShot/BufferShotToggle" to="." method="_on_buffer_shot_toggle_toggled"]
+[connection signal="mouse_entered" from="UILayer/UI/VBoxContainer/Columns/RightColumn/MasterVolume" to="UILayer/UI/VBoxContainer/Description" method="set_text" binds= ["MENU_SettingsMasterVol_D"]]
+[connection signal="value_changed" from="UILayer/UI/VBoxContainer/Columns/RightColumn/MasterVolume/MasterSlider" to="." method="_on_master_slider_value_changed"]
+[connection signal="mouse_entered" from="UILayer/UI/VBoxContainer/Columns/RightColumn/MusicVolume" to="UILayer/UI/VBoxContainer/Description" method="set_text" binds= ["MENU_SettingsMusicVol_D"]]
+[connection signal="value_changed" from="UILayer/UI/VBoxContainer/Columns/RightColumn/MusicVolume/MusicSlider" to="." method="_on_music_slider_value_changed"]
+[connection signal="mouse_entered" from="UILayer/UI/VBoxContainer/Columns/RightColumn/SoundVolume" to="UILayer/UI/VBoxContainer/Description" method="set_text" binds= ["MENU_SettingsSoundVol_D"]]
+[connection signal="value_changed" from="UILayer/UI/VBoxContainer/Columns/RightColumn/SoundVolume/SoundSlider" to="." method="_on_sound_slider_value_changed"]
+[connection signal="pressed" from="UILayer/UI/VBoxContainer/SaveButton" to="." method="_on_save_set_pressed"]
+[connection signal="pressed" from="UILayer/UI/VBoxContainer/SaveButton" to="Sounds/MenuSoundPlayer" method="play_select"]
+[connection signal="pressed" from="UILayer/ModsButton" to="." method="_on_mods_button_pressed"]

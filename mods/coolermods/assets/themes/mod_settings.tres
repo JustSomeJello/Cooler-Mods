@@ -1,0 +1,149 @@
+[gd_resource type="Theme" load_steps=25 format=3 uid="uid://bckb4biy4kjrn"]
+
+[ext_resource type="Texture2D" uid="uid://dcdooi7m1x7gp" path="res://mods/coolermods/assets/peak_small.png" id="1_d0y8y"]
+[ext_resource type="Texture2D" uid="uid://dplvf2vdguy7v" path="res://assetsNEW/graphics/editor/off.png" id="2_tbvjf"]
+[ext_resource type="Texture2D" uid="uid://dle70buflusdr" path="res://assetsNEW/graphics/menu/toggle_normal.png" id="3_qakcg"]
+[ext_resource type="Texture2D" uid="uid://cmxsq6jjvafcm" path="res://assetsNEW/graphics/editor/norank.png" id="4_y15mc"]
+[ext_resource type="Texture2D" uid="uid://bb302c5iodtjq" path="res://assetsNEW/graphics/editor/peak.png" id="5_m8kr3"]
+[ext_resource type="Texture2D" uid="uid://dfv45ux4od2p6" path="res://assetsNEW/graphics/menu/slider.png" id="6_tkf70"]
+[ext_resource type="Texture2D" uid="uid://cj40w7c7bkxu2" path="res://mods/coolermods/assets/desc_box_bevel.png" id="7_6qhcv"]
+[ext_resource type="FontFile" uid="uid://b81yjagt2wxnx" path="res://assetsNEW/fonts/Omnes Pro Bold.otf" id="7_ekf7e"]
+[ext_resource type="FontFile" uid="uid://bayy88gke8rk2" path="res://assetsNEW/fonts/SuperBubble-Rpaj3.ttf" id="7_ox40f"]
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_ynile"]
+texture = ExtResource("3_qakcg")
+texture_margin_left = 4.0
+texture_margin_top = 4.0
+texture_margin_right = 4.0
+texture_margin_bottom = 4.0
+modulate_color = Color(0.501961, 0.501961, 0.501961, 1)
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_mpsji"]
+texture = ExtResource("3_qakcg")
+texture_margin_left = 4.0
+texture_margin_top = 4.0
+texture_margin_right = 4.0
+texture_margin_bottom = 4.0
+modulate_color = Color(1.39, 1.39, 1.39, 1)
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_cywxb"]
+texture = ExtResource("3_qakcg")
+texture_margin_left = 4.0
+texture_margin_top = 4.0
+texture_margin_right = 4.0
+texture_margin_bottom = 4.0
+modulate_color = Color(1.39, 1.39, 1.39, 1)
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_4nc1i"]
+texture = ExtResource("3_qakcg")
+texture_margin_left = 4.0
+texture_margin_top = 4.0
+texture_margin_right = 4.0
+texture_margin_bottom = 4.0
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_vmtdw"]
+texture = ExtResource("3_qakcg")
+texture_margin_left = 4.0
+texture_margin_top = 4.0
+texture_margin_right = 4.0
+texture_margin_bottom = 4.0
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_it5y4"]
+texture = ExtResource("6_tkf70")
+texture_margin_left = 8.0
+texture_margin_right = 8.0
+modulate_color = Color(0.672451, 0.672451, 0.672451, 1)
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_c0nhy"]
+texture = ExtResource("6_tkf70")
+texture_margin_left = 8.0
+texture_margin_right = 8.0
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_g06e5"]
+texture = ExtResource("3_qakcg")
+texture_margin_left = 4.0
+texture_margin_top = 4.0
+texture_margin_right = 4.0
+texture_margin_bottom = 4.0
+modulate_color = Color(0.501961, 0.501961, 0.501961, 1)
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_6qhcv"]
+texture = ExtResource("3_qakcg")
+texture_margin_left = 4.0
+texture_margin_top = 4.0
+texture_margin_right = 4.0
+texture_margin_bottom = 4.0
+modulate_color = Color(1.39, 1.39, 1.39, 1)
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_ekf7e"]
+texture = ExtResource("3_qakcg")
+texture_margin_left = 4.0
+texture_margin_top = 4.0
+texture_margin_right = 4.0
+texture_margin_bottom = 4.0
+modulate_color = Color(1.39, 1.39, 1.39, 1)
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_d0y8y"]
+texture = ExtResource("3_qakcg")
+texture_margin_left = 4.0
+texture_margin_top = 4.0
+texture_margin_right = 4.0
+texture_margin_bottom = 4.0
+modulate_color = Color(1.39, 1.39, 1.39, 1)
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_hlbgd"]
+texture = ExtResource("3_qakcg")
+texture_margin_left = 4.0
+texture_margin_top = 4.0
+texture_margin_right = 4.0
+texture_margin_bottom = 4.0
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_uv12m"]
+texture = ExtResource("3_qakcg")
+texture_margin_left = 4.0
+texture_margin_top = 4.0
+texture_margin_right = 4.0
+texture_margin_bottom = 4.0
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_6qhcv"]
+bg_color = Color(0.5, 0.5, 0.5, 1)
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_ayaqj"]
+texture = ExtResource("7_6qhcv")
+texture_margin_left = 2.0
+texture_margin_top = 2.0
+texture_margin_right = 2.0
+texture_margin_bottom = 2.0
+modulate_color = Color(0.5, 0.5, 0.5, 1)
+
+[resource]
+default_font = ExtResource("7_ox40f")
+default_font_size = 12
+CheckButton/icons/checked = ExtResource("1_d0y8y")
+CheckButton/icons/unchecked = ExtResource("2_tbvjf")
+CheckButton/styles/disabled = SubResource("StyleBoxTexture_ynile")
+CheckButton/styles/focus = SubResource("StyleBoxTexture_mpsji")
+CheckButton/styles/hover = SubResource("StyleBoxTexture_cywxb")
+CheckButton/styles/hover_pressed = SubResource("StyleBoxTexture_cywxb")
+CheckButton/styles/normal = SubResource("StyleBoxTexture_4nc1i")
+CheckButton/styles/pressed = SubResource("StyleBoxTexture_vmtdw")
+HBoxContainer/constants/separation = 0
+HSlider/icons/grabber = ExtResource("4_y15mc")
+HSlider/icons/grabber_highlight = ExtResource("5_m8kr3")
+HSlider/styles/grabber_area = SubResource("StyleBoxTexture_it5y4")
+HSlider/styles/grabber_area_highlight = SubResource("StyleBoxTexture_c0nhy")
+LineEdit/fonts/font = ExtResource("7_ekf7e")
+OptionButton/styles/disabled = SubResource("StyleBoxTexture_g06e5")
+OptionButton/styles/focus = SubResource("StyleBoxTexture_6qhcv")
+OptionButton/styles/hover = SubResource("StyleBoxTexture_ekf7e")
+OptionButton/styles/hover_pressed = SubResource("StyleBoxTexture_d0y8y")
+OptionButton/styles/normal = SubResource("StyleBoxTexture_hlbgd")
+OptionButton/styles/pressed = SubResource("StyleBoxTexture_uv12m")
+PopupMenu/colors/font_color = Color(1, 1, 1, 1)
+PopupMenu/constants/outline_size = 5
+PopupMenu/font_sizes/font_size = 12
+PopupMenu/icons/radio_checked = ExtResource("1_d0y8y")
+PopupMenu/icons/radio_unchecked = ExtResource("2_tbvjf")
+PopupMenu/styles/hover = SubResource("StyleBoxFlat_6qhcv")
+PopupMenu/styles/panel = SubResource("StyleBoxTexture_ayaqj")
+VBoxContainer/constants/separation = 0

@@ -1,0 +1,9 @@
+[gd_resource type="StyleBoxTexture" load_steps=2 format=3 uid="uid://cusurp5rj3sss"]
+
+[ext_resource type="Texture2D" uid="uid://6jwfmb3b21em" path="res://mods/coolermods/assets/color_range.png" id="1_4wu6l"]
+
+[resource]
+texture = ExtResource("1_4wu6l")
+axis_stretch_vertical = 2
+region_rect = Rect2(1, 1, 100, 1)
+modulate_color = Color(0.5, 0.5, 0.5, 1)

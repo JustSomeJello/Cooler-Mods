@@ -1,0 +1,15 @@
+{
+	"icon": "mods/coolermods/animated_icon.tres",
+	
+	"bg_color": "#ffd44d",
+	"bg_stylebox": "mods/coolermods/bg.tres",
+	
+	"description_bgcolor": "#ffd44d",
+	"description_stylebox": "mods/coolermods/desc_bg.tres",
+	
+	"config_color": "#ff2e2e",
+	"config_theme": "mods/coolermods/assets/themes/mod_settings.tres",
+	
+	"author_fancy": "[img]mods/coolermods/justsomejello.png",
+	"name_fancy": "[outline_size=6][outline_color=#111111][rainbow freq=0.25 sat=0.5 speed=0.75]Cooler Mods[/rainbow]"
+}

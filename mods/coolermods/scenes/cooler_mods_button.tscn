@@ -1,0 +1,32 @@
+[gd_scene load_steps=4 format=3 uid="uid://doohsfrpbvuvn"]
+
+[ext_resource type="Script" uid="uid://p140ye2csgag" path="res://mods/coolermods/scenes/cooler_mods_button.gd" id="1_epvju"]
+[ext_resource type="Texture2D" uid="uid://dywxdt3oahkpc" path="res://mods/coolermods/icon.png" id="2_0gmwh"]
+[ext_resource type="FontFile" uid="uid://cep5kfn2ih83v" path="res://assetsNEW/fonts/impact.ttf" id="2_epvju"]
+
+[node name="ModsButton" type="TextureButton"]
+offset_left = 704.0
+offset_top = 448.0
+offset_right = 752.0
+offset_bottom = 512.0
+script = ExtResource("1_epvju")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(24, 24)
+scale = Vector2(1.5, 1.5)
+texture = ExtResource("2_0gmwh")
+
+[node name="Label" type="Label" parent="."]
+layout_mode = 0
+offset_top = 40.0
+offset_right = 48.0
+offset_bottom = 61.0
+theme_override_colors/font_outline_color = Color(0, 0.17, 0.153, 1)
+theme_override_constants/outline_size = 8
+theme_override_fonts/font = ExtResource("2_epvju")
+theme_override_font_sizes/font_size = 16
+text = "MODS"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[connection signal="pressed" from="." to="." method="_on_pressed"]

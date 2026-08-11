@@ -1,0 +1,529 @@
+[gd_scene load_steps=44 format=3 uid="uid://c2y5rbahtycpd"]
+
+[ext_resource type="Script" uid="uid://bl7ji22yq4lad" path="res://mods/coolermods/overrides/mods_menu.gd" id="1_q5vw8"]
+[ext_resource type="Texture2D" uid="uid://cqt1yl4ruvwmr" path="res://assetsNEW/graphics/menu/settings_bg.png" id="2_4re5q"]
+[ext_resource type="PackedScene" uid="uid://4gsl7s37ki34" path="res://assetsNEW/scenes/menu_objects/buttons/real_back_button.tscn" id="3_2w0fu"]
+[ext_resource type="FontFile" uid="uid://b81yjagt2wxnx" path="res://assetsNEW/fonts/Omnes Pro Bold.otf" id="4_e8esc"]
+[ext_resource type="PackedScene" uid="uid://cm13omrgmpawv" path="res://mods/coolermods/scenes/dancer.tscn" id="5_os68n"]
+[ext_resource type="Theme" uid="uid://crjv5fv10tx15" path="res://assetsNEW/graphics/themes/button_1.tres" id="5_vjqrh"]
+[ext_resource type="Theme" uid="uid://bckb4biy4kjrn" path="res://mods/coolermods/assets/themes/mod_settings.tres" id="6_fxqhs"]
+[ext_resource type="FontFile" uid="uid://bayy88gke8rk2" path="res://assetsNEW/fonts/SuperBubble-Rpaj3.ttf" id="6_os68n"]
+[ext_resource type="AudioStream" uid="uid://bektb03jcgu0x" path="res://assetsNEW/sounds/player/cancel.ogg" id="7_fxqhs"]
+[ext_resource type="Texture2D" uid="uid://cj40w7c7bkxu2" path="res://mods/coolermods/assets/desc_box_bevel.png" id="7_vjqrh"]
+[ext_resource type="AudioStream" uid="uid://cyv4fdxfy2i2p" path="res://assetsNEW/music/musCredits.ogg" id="8_64yvw"]
+[ext_resource type="Texture2D" uid="uid://dle70buflusdr" path="res://assetsNEW/graphics/menu/toggle_normal.png" id="10_fxqhs"]
+[ext_resource type="Texture2D" uid="uid://cnneedsun4c58" path="res://mods/coolermods/assets/open_folder.png" id="11_fxqhs"]
+[ext_resource type="Texture2D" uid="uid://dwpv220b0lgfu" path="res://mods/coolermods/assets/Circle_16x16_4.png" id="12_fxqhs"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_jq7p5"]
+atlas = ExtResource("2_4re5q")
+region = Rect2(0, 0, 512, 512)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_a75u2"]
+atlas = ExtResource("2_4re5q")
+region = Rect2(512, 0, 512, 512)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_r2w42"]
+atlas = ExtResource("2_4re5q")
+region = Rect2(1024, 0, 512, 512)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_mwqso"]
+atlas = ExtResource("2_4re5q")
+region = Rect2(1536, 0, 512, 512)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_svbwa"]
+atlas = ExtResource("2_4re5q")
+region = Rect2(2048, 0, 512, 512)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_2qf4j"]
+atlas = ExtResource("2_4re5q")
+region = Rect2(2560, 0, 512, 512)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_i74so"]
+atlas = ExtResource("2_4re5q")
+region = Rect2(3072, 0, 512, 512)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_cjk41"]
+atlas = ExtResource("2_4re5q")
+region = Rect2(3584, 0, 512, 512)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_c0nqv"]
+atlas = ExtResource("2_4re5q")
+region = Rect2(4096, 0, 512, 512)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ousmm"]
+atlas = ExtResource("2_4re5q")
+region = Rect2(4608, 0, 512, 512)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_sqvo0"]
+atlas = ExtResource("2_4re5q")
+region = Rect2(5120, 0, 512, 512)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_c0f54"]
+atlas = ExtResource("2_4re5q")
+region = Rect2(5632, 0, 512, 512)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ie6he"]
+atlas = ExtResource("2_4re5q")
+region = Rect2(6144, 0, 512, 512)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_n0ntf"]
+atlas = ExtResource("2_4re5q")
+region = Rect2(6656, 0, 512, 512)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_71ded"]
+atlas = ExtResource("2_4re5q")
+region = Rect2(7168, 0, 512, 512)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_w6nsh"]
+atlas = ExtResource("2_4re5q")
+region = Rect2(7680, 0, 512, 512)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_p21cc"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_jq7p5")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_a75u2")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_r2w42")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_mwqso")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_svbwa")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_2qf4j")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_i74so")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_cjk41")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_c0nqv")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ousmm")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_sqvo0")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_c0f54")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ie6he")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_n0ntf")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_71ded")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_w6nsh")
+}],
+"loop": true,
+"name": &"default",
+"speed": 20.0
+}]
+
+[sub_resource type="StyleBoxLine" id="StyleBoxLine_vjqrh"]
+color = Color(1, 1, 1, 0)
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_os68n"]
+content_margin_left = 8.0
+content_margin_right = 8.0
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_e8esc"]
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_os68n"]
+resource_local_to_scene = true
+content_margin_left = 5.0
+content_margin_top = 4.0
+content_margin_right = 5.0
+content_margin_bottom = 4.0
+texture = ExtResource("7_vjqrh")
+texture_margin_left = 2.0
+texture_margin_top = 2.0
+texture_margin_right = 2.0
+texture_margin_bottom = 2.0
+modulate_color = Color(0.3, 0.3, 0.3, 1)
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_64yvw"]
+texture = ExtResource("10_fxqhs")
+texture_margin_left = 4.0
+texture_margin_top = 4.0
+texture_margin_right = 4.0
+texture_margin_bottom = 4.0
+modulate_color = Color(1.39, 1.39, 1.39, 1)
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_xp2cq"]
+texture = ExtResource("10_fxqhs")
+texture_margin_left = 4.0
+texture_margin_top = 4.0
+texture_margin_right = 4.0
+texture_margin_bottom = 4.0
+modulate_color = Color(0.501961, 0.501961, 0.501961, 1)
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_1gevd"]
+texture = ExtResource("10_fxqhs")
+texture_margin_left = 4.0
+texture_margin_top = 4.0
+texture_margin_right = 4.0
+texture_margin_bottom = 4.0
+modulate_color = Color(1.39, 1.39, 1.39, 1)
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_ofqmk"]
+texture = ExtResource("10_fxqhs")
+texture_margin_left = 4.0
+texture_margin_top = 4.0
+texture_margin_right = 4.0
+texture_margin_bottom = 4.0
+modulate_color = Color(1.39, 1.39, 1.39, 1)
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_ws2v0"]
+texture = ExtResource("10_fxqhs")
+texture_margin_left = 4.0
+texture_margin_top = 4.0
+texture_margin_right = 4.0
+texture_margin_bottom = 4.0
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_mse2t"]
+texture = ExtResource("10_fxqhs")
+texture_margin_left = 4.0
+texture_margin_top = 4.0
+texture_margin_right = 4.0
+texture_margin_bottom = 4.0
+
+[sub_resource type="StyleBoxLine" id="StyleBoxLine_fj857"]
+color = Color(1, 1, 1, 1)
+grow_begin = -16.0
+grow_end = -16.0
+
+[sub_resource type="StyleBoxLine" id="StyleBoxLine_e8esc"]
+color = Color(1, 1, 1, 1)
+grow_begin = -16.0
+grow_end = -16.0
+vertical = true
+
+[node name="CoolerModsMenu" type="Node2D" node_paths=PackedStringArray("_disabled_mods", "_enabled_mods", "_activation_toggle", "_music_player", "_background")]
+script = ExtResource("1_q5vw8")
+_disabled_mods = NodePath("UILayer/Control/VBoxContainer/HBoxContainer/Available/ScrollContainer/DisabledMods")
+_enabled_mods = NodePath("UILayer/Control/VBoxContainer/HBoxContainer/Enabled/ScrollContainer/EnabledMods")
+_activation_toggle = NodePath("UILayer/Control/VBoxContainer/AllTheButtons/ExtraButtons/Row1/Settings/VBoxContainer/ModsEnabled/ModsEnabled")
+_music_player = NodePath("Sounds/mus")
+_background = NodePath("UILayer/BG")
+music = -2
+
+[node name="dont mind me" type="AudioListener2D" parent="."]
+position = Vector2(733, 0)
+current = true
+
+[node name="UILayer" type="CanvasLayer" parent="."]
+layer = 0
+
+[node name="BG" type="AnimatedSprite2D" parent="UILayer"]
+modulate = Color(0.631373, 0.180392, 1, 1)
+z_index = -1
+position = Vector2(512, 256)
+sprite_frames = SubResource("SpriteFrames_p21cc")
+autoplay = "default"
+
+[node name="Control" type="Control" parent="UILayer"]
+custom_minimum_size = Vector2(512, 512)
+layout_mode = 3
+anchors_preset = 6
+anchor_left = 1.0
+anchor_top = 0.5
+anchor_right = 1.0
+anchor_bottom = 0.5
+offset_left = -512.0
+offset_top = -256.0
+offset_bottom = 256.0
+grow_horizontal = 0
+grow_vertical = 2
+
+[node name="VBoxContainer" type="VBoxContainer" parent="UILayer/Control"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/separation = 0
+
+[node name="Control" type="Control" parent="UILayer/Control/VBoxContainer"]
+custom_minimum_size = Vector2(0, 48)
+layout_mode = 2
+
+[node name="REALBackButton" parent="UILayer/Control/VBoxContainer/Control" node_paths=PackedStringArray("parent") instance=ExtResource("3_2w0fu")]
+layout_mode = 0
+offset_left = 8.0
+offset_top = 8.0
+offset_right = 72.0
+offset_bottom = 40.0
+parent = NodePath("../../../../..")
+GO_TO = 2
+with_state = 1
+
+[node name="Header" type="Label" parent="UILayer/Control/VBoxContainer/Control"]
+layout_mode = 0
+offset_right = 512.0
+offset_bottom = 48.0
+theme_override_fonts/font = ExtResource("4_e8esc")
+text = "We can make something entirely new."
+horizontal_alignment = 1
+vertical_alignment = 1
+autowrap_mode = 3
+
+[node name="Dancer" parent="UILayer/Control/VBoxContainer/Control" node_paths=PackedStringArray("player_override") instance=ExtResource("5_os68n")]
+unique_name_in_owner = true
+position = Vector2(477, 25)
+scale = Vector2(0.5, 0.5)
+player_override = NodePath("../../../../../Sounds/mus")
+
+[node name="HSep2" type="HSeparator" parent="UILayer/Control/VBoxContainer"]
+layout_mode = 2
+theme_override_constants/separation = 8
+theme_override_styles/separator = SubResource("StyleBoxLine_vjqrh")
+
+[node name="AllTheButtons" type="PanelContainer" parent="UILayer/Control/VBoxContainer"]
+layout_mode = 2
+theme_override_styles/panel = SubResource("StyleBoxEmpty_os68n")
+
+[node name="ExtraButtons" type="HBoxContainer" parent="UILayer/Control/VBoxContainer/AllTheButtons"]
+layout_mode = 2
+theme_override_constants/separation = 8
+
+[node name="Row1" type="VBoxContainer" parent="UILayer/Control/VBoxContainer/AllTheButtons/ExtraButtons"]
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_constants/separation = 0
+
+[node name="Settings" type="ScrollContainer" parent="UILayer/Control/VBoxContainer/AllTheButtons/ExtraButtons/Row1"]
+layout_mode = 2
+size_flags_vertical = 3
+
+[node name="VBoxContainer" type="VBoxContainer" parent="UILayer/Control/VBoxContainer/AllTheButtons/ExtraButtons/Row1/Settings"]
+layout_mode = 2
+size_flags_horizontal = 2
+size_flags_vertical = 3
+theme_override_constants/separation = 4
+
+[node name="ModsEnabled" type="HBoxContainer" parent="UILayer/Control/VBoxContainer/AllTheButtons/ExtraButtons/Row1/Settings/VBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 0
+theme_override_constants/separation = 12
+
+[node name="Label" type="Label" parent="UILayer/Control/VBoxContainer/AllTheButtons/ExtraButtons/Row1/Settings/VBoxContainer/ModsEnabled"]
+layout_mode = 2
+size_flags_horizontal = 0
+theme_override_fonts/font = ExtResource("4_e8esc")
+theme_override_font_sizes/font_size = 16
+text = "Mods Enabled:"
+
+[node name="ModsEnabled" type="CheckButton" parent="UILayer/Control/VBoxContainer/AllTheButtons/ExtraButtons/Row1/Settings/VBoxContainer/ModsEnabled"]
+unique_name_in_owner = true
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+theme = ExtResource("6_fxqhs")
+
+[node name="DescOption" type="HBoxContainer" parent="UILayer/Control/VBoxContainer/AllTheButtons/ExtraButtons/Row1/Settings/VBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 4
+
+[node name="Label" type="Label" parent="UILayer/Control/VBoxContainer/AllTheButtons/ExtraButtons/Row1/Settings/VBoxContainer/DescOption"]
+layout_mode = 2
+theme_override_fonts/font = ExtResource("4_e8esc")
+text = "Show Descriptions: "
+
+[node name="ShowDescriptions" type="CheckButton" parent="UILayer/Control/VBoxContainer/AllTheButtons/ExtraButtons/Row1/Settings/VBoxContainer/DescOption"]
+unique_name_in_owner = true
+layout_mode = 2
+size_flags_vertical = 4
+theme = ExtResource("6_fxqhs")
+
+[node name="LineEdit" type="LineEdit" parent="UILayer/Control/VBoxContainer/AllTheButtons/ExtraButtons/Row1"]
+visible = false
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 8
+theme_override_fonts/font = ExtResource("4_e8esc")
+theme_override_font_sizes/font_size = 12
+theme_override_styles/focus = SubResource("StyleBoxEmpty_e8esc")
+theme_override_styles/normal = SubResource("StyleBoxTexture_os68n")
+placeholder_text = "Search for mod..."
+caret_blink = true
+caret_blink_interval = 0.5
+
+[node name="ApplyMods" type="VBoxContainer" parent="UILayer/Control/VBoxContainer/AllTheButtons/ExtraButtons"]
+custom_minimum_size = Vector2(222, 0)
+layout_mode = 2
+size_flags_horizontal = 10
+
+[node name="Apply" type="Button" parent="UILayer/Control/VBoxContainer/AllTheButtons/ExtraButtons/ApplyMods"]
+unique_name_in_owner = true
+layout_mode = 2
+size_flags_horizontal = 3
+theme = ExtResource("5_vjqrh")
+theme_override_constants/outline_size = 5
+theme_override_fonts/font = ExtResource("6_os68n")
+text = "APPLY AND RESTART"
+
+[node name="UtilButtons" type="HBoxContainer" parent="UILayer/Control/VBoxContainer/AllTheButtons/ExtraButtons/ApplyMods"]
+layout_mode = 2
+theme_override_constants/separation = 0
+
+[node name="ModFolder" type="Button" parent="UILayer/Control/VBoxContainer/AllTheButtons/ExtraButtons/ApplyMods/UtilButtons"]
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_fonts/font = ExtResource("4_e8esc")
+theme_override_font_sizes/font_size = 12
+theme_override_styles/focus = SubResource("StyleBoxTexture_64yvw")
+theme_override_styles/disabled = SubResource("StyleBoxTexture_xp2cq")
+theme_override_styles/hover_pressed = SubResource("StyleBoxTexture_1gevd")
+theme_override_styles/hover = SubResource("StyleBoxTexture_ofqmk")
+theme_override_styles/pressed = SubResource("StyleBoxTexture_ws2v0")
+theme_override_styles/normal = SubResource("StyleBoxTexture_mse2t")
+text = "Mods Folder"
+icon = ExtResource("11_fxqhs")
+
+[node name="Refresh" type="Button" parent="UILayer/Control/VBoxContainer/AllTheButtons/ExtraButtons/ApplyMods/UtilButtons"]
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_fonts/font = ExtResource("4_e8esc")
+theme_override_font_sizes/font_size = 12
+theme_override_styles/focus = SubResource("StyleBoxTexture_64yvw")
+theme_override_styles/disabled = SubResource("StyleBoxTexture_xp2cq")
+theme_override_styles/hover_pressed = SubResource("StyleBoxTexture_1gevd")
+theme_override_styles/hover = SubResource("StyleBoxTexture_ofqmk")
+theme_override_styles/pressed = SubResource("StyleBoxTexture_ws2v0")
+theme_override_styles/normal = SubResource("StyleBoxTexture_mse2t")
+text = "Reload Available"
+icon = ExtResource("12_fxqhs")
+
+[node name="HBoxContainer2" type="HBoxContainer" parent="UILayer/Control/VBoxContainer"]
+visible = false
+layout_mode = 2
+
+[node name="Padding" type="Control" parent="UILayer/Control/VBoxContainer/HBoxContainer2"]
+custom_minimum_size = Vector2(8, 0)
+layout_mode = 2
+
+[node name="Padding3" type="Control" parent="UILayer/Control/VBoxContainer/HBoxContainer2"]
+custom_minimum_size = Vector2(8, 0)
+layout_mode = 2
+
+[node name="Padding2" type="Control" parent="UILayer/Control/VBoxContainer/HBoxContainer2"]
+custom_minimum_size = Vector2(8, 0)
+layout_mode = 2
+
+[node name="HSep" type="HSeparator" parent="UILayer/Control/VBoxContainer"]
+layout_mode = 2
+theme_override_constants/separation = 16
+theme_override_styles/separator = SubResource("StyleBoxLine_vjqrh")
+
+[node name="HBoxContainer" type="HBoxContainer" parent="UILayer/Control/VBoxContainer"]
+layout_mode = 2
+size_flags_vertical = 3
+theme_override_constants/separation = 8
+
+[node name="Available" type="VBoxContainer" parent="UILayer/Control/VBoxContainer/HBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="Label" type="Label" parent="UILayer/Control/VBoxContainer/HBoxContainer/Available"]
+layout_mode = 2
+theme_override_fonts/font = ExtResource("4_e8esc")
+text = "Available Mods"
+horizontal_alignment = 1
+
+[node name="HSep" type="HSeparator" parent="UILayer/Control/VBoxContainer/HBoxContainer/Available"]
+visible = false
+layout_mode = 2
+theme_override_constants/separation = 8
+theme_override_styles/separator = SubResource("StyleBoxLine_fj857")
+
+[node name="ScrollContainer" type="ScrollContainer" parent="UILayer/Control/VBoxContainer/HBoxContainer/Available"]
+layout_mode = 2
+size_flags_vertical = 3
+follow_focus = true
+
+[node name="DisabledMods" type="VBoxContainer" parent="UILayer/Control/VBoxContainer/HBoxContainer/Available/ScrollContainer"]
+unique_name_in_owner = true
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+
+[node name="VSeparator" type="VSeparator" parent="UILayer/Control/VBoxContainer/HBoxContainer"]
+visible = false
+layout_mode = 2
+theme_override_styles/separator = SubResource("StyleBoxLine_e8esc")
+
+[node name="Enabled" type="VBoxContainer" parent="UILayer/Control/VBoxContainer/HBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="Label" type="Label" parent="UILayer/Control/VBoxContainer/HBoxContainer/Enabled"]
+layout_mode = 2
+theme_override_fonts/font = ExtResource("4_e8esc")
+text = "Enabled Mods"
+horizontal_alignment = 1
+
+[node name="HSep" type="HSeparator" parent="UILayer/Control/VBoxContainer/HBoxContainer/Enabled"]
+visible = false
+layout_mode = 2
+theme_override_constants/separation = 8
+theme_override_styles/separator = SubResource("StyleBoxLine_fj857")
+
+[node name="ScrollContainer" type="ScrollContainer" parent="UILayer/Control/VBoxContainer/HBoxContainer/Enabled"]
+layout_mode = 2
+size_flags_vertical = 3
+follow_focus = true
+
+[node name="EnabledMods" type="VBoxContainer" parent="UILayer/Control/VBoxContainer/HBoxContainer/Enabled/ScrollContainer"]
+unique_name_in_owner = true
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+
+[node name="ClickEater" type="Control" parent="UILayer"]
+visible = false
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Sounds" type="Node" parent="."]
+
+[node name="sound" type="AudioStreamPlayer" parent="Sounds"]
+stream = ExtResource("7_fxqhs")
+bus = &"Sound"
+
+[node name="mus" type="AudioStreamPlayer" parent="Sounds"]
+stream = ExtResource("8_64yvw")
+autoplay = true
+bus = &"Music"
+
+[connection signal="pressed" from="UILayer/Control/VBoxContainer/Control/REALBackButton" to="." method="_on_real_back_button_pressed"]
+[connection signal="toggled" from="UILayer/Control/VBoxContainer/AllTheButtons/ExtraButtons/Row1/Settings/VBoxContainer/ModsEnabled/ModsEnabled" to="." method="_on_mods_enabled_toggled"]
+[connection signal="pressed" from="UILayer/Control/VBoxContainer/AllTheButtons/ExtraButtons/Row1/Settings/VBoxContainer/DescOption/ShowDescriptions" to="." method="_on_show_descriptions_pressed"]
+[connection signal="toggled" from="UILayer/Control/VBoxContainer/AllTheButtons/ExtraButtons/Row1/Settings/VBoxContainer/DescOption/ShowDescriptions" to="." method="_on_show_descriptions_toggled"]
+[connection signal="mouse_entered" from="UILayer/Control/VBoxContainer/AllTheButtons/ExtraButtons/ApplyMods/Apply" to="." method="_on_apply_mouse_entered"]
+[connection signal="mouse_exited" from="UILayer/Control/VBoxContainer/AllTheButtons/ExtraButtons/ApplyMods/Apply" to="." method="_on_apply_mouse_exited"]
+[connection signal="pressed" from="UILayer/Control/VBoxContainer/AllTheButtons/ExtraButtons/ApplyMods/Apply" to="." method="_on_apply_pressed"]
+[connection signal="pressed" from="UILayer/Control/VBoxContainer/AllTheButtons/ExtraButtons/ApplyMods/UtilButtons/ModFolder" to="." method="_on_mod_folder_pressed"]
+[connection signal="pressed" from="UILayer/Control/VBoxContainer/AllTheButtons/ExtraButtons/ApplyMods/UtilButtons/Refresh" to="." method="_on_refresh_pressed"]
+
+[editable path="UILayer/Control/VBoxContainer/Control/Dancer"]

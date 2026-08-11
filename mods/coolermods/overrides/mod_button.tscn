@@ -1,0 +1,253 @@
+[gd_scene load_steps=22 format=3 uid="uid://r0us1eyjyb2x"]
+
+[ext_resource type="Script" uid="uid://dqryeany4jwlj" path="res://mods/coolermods/overrides/mod_button.gd" id="1_baj28"]
+[ext_resource type="Theme" uid="uid://c218wt75ak8es" path="res://mods/coolermods/assets/themes/modmenu_theme.tres" id="2_mmkq0"]
+[ext_resource type="Texture2D" uid="uid://dplvf2vdguy7v" path="res://assetsNEW/graphics/editor/off.png" id="3_0ynki"]
+[ext_resource type="Texture2D" uid="uid://doysfyt0ulu1h" path="res://assetsNEW/graphics/menu/main_menu/icon_main_extra.png" id="4_y3qki"]
+[ext_resource type="FontFile" uid="uid://b81yjagt2wxnx" path="res://assetsNEW/fonts/Omnes Pro Bold.otf" id="5_g4n3g"]
+[ext_resource type="FontFile" uid="uid://d25l7wri8fex2" path="res://assetsNEW/fonts/COMIC.TTF" id="6_3ajg8"]
+[ext_resource type="FontFile" uid="uid://bayy88gke8rk2" path="res://assetsNEW/fonts/SuperBubble-Rpaj3.ttf" id="6_baj28"]
+[ext_resource type="StyleBox" uid="uid://pwnsfy68g50m" path="res://mods/coolermods/desc_bg.tres" id="7_a00ef"]
+[ext_resource type="Texture2D" uid="uid://du01fh4f2h20o" path="res://assetsNEW/graphics/menu/main_menu/icon_main_cog.png" id="8_baj28"]
+[ext_resource type="Texture2D" uid="uid://dcdooi7m1x7gp" path="res://mods/coolermods/assets/peak_small.png" id="10_baj28"]
+[ext_resource type="Texture2D" uid="uid://syf4wxh7of11" path="res://assetsNEW/graphics/editor/arrowup.png" id="11_evhys"]
+[ext_resource type="Texture2D" uid="uid://brdvrlgcdbxcs" path="res://assetsNEW/graphics/editor/arrow.png" id="12_b6ua8"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_7l4e5"]
+content_margin_left = 4.0
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_baj28"]
+bg_color = Color(0.1, 0.1, 0.1, 0.6)
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_07y10"]
+content_margin_left = 4.0
+content_margin_top = 4.0
+content_margin_right = 4.0
+content_margin_bottom = 4.0
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_f2uch"]
+content_margin_left = 2.0
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_abu3k"]
+content_margin_right = 5.0
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_dtckt"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_baj28"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_mmkq0"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_0ynki"]
+
+[node name="ModButton" type="PanelContainer" node_paths=PackedStringArray("_disable_button", "_enable_button", "_order_buttons", "_icon", "_viewport", "_viewport_icon", "_mod_bg", "_name", "_author", "_version", "_description", "_description_bg", "_config_button", "_content")]
+custom_minimum_size = Vector2(200, 0)
+offset_right = 40.0
+offset_bottom = 40.0
+theme_override_styles/panel = SubResource("StyleBoxEmpty_7l4e5")
+script = ExtResource("1_baj28")
+_disable_button = NodePath("HBoxContainer/Disable")
+_enable_button = NodePath("HBoxContainer/Enable")
+_order_buttons = NodePath("HBoxContainer/OrderButtons")
+_icon = NodePath("HBoxContainer/BG/ModInfo/Content/Basic/TextureRect")
+_viewport = NodePath("AnimatedIcon")
+_viewport_icon = NodePath("AnimatedIcon/Icon")
+_mod_bg = NodePath("HBoxContainer/BG")
+_name = NodePath("HBoxContainer/BG/ModInfo/Content/Basic/VBoxContainer/NameFancy")
+_author = NodePath("HBoxContainer/BG/ModInfo/Content/Basic/VBoxContainer/HBoxContainer/AuthorFancy")
+_version = NodePath("HBoxContainer/BG/ModInfo/Content/Basic/VBoxContainer/HBoxContainer/Version")
+_description = NodePath("HBoxContainer/BG/ModInfo/Content/Description/DescriptionFancy")
+_description_bg = NodePath("HBoxContainer/BG/ModInfo/Content/Description")
+_config_button = NodePath("HBoxContainer/BG/ModInfo/Content/Basic/VBoxContainer/HBoxContainer/ConfigMenu")
+_content = NodePath("HBoxContainer/BG/ModInfo/Content")
+
+[node name="HBoxContainer" type="HBoxContainer" parent="."]
+layout_mode = 2
+theme_override_constants/separation = 0
+
+[node name="Disable" type="Button" parent="HBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 3
+theme = ExtResource("2_mmkq0")
+theme_override_font_sizes/font_size = 12
+icon = ExtResource("3_0ynki")
+
+[node name="BG" type="PanelContainer" parent="HBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_styles/panel = SubResource("StyleBoxFlat_baj28")
+
+[node name="ModInfo" type="PanelContainer" parent="HBoxContainer/BG"]
+layout_mode = 2
+theme_override_styles/panel = SubResource("StyleBoxEmpty_07y10")
+
+[node name="Content" type="VBoxContainer" parent="HBoxContainer/BG/ModInfo"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="Basic" type="HBoxContainer" parent="HBoxContainer/BG/ModInfo/Content"]
+layout_mode = 2
+
+[node name="TextureRect" type="TextureRect" parent="HBoxContainer/BG/ModInfo/Content/Basic"]
+custom_minimum_size = Vector2(48, 48)
+layout_mode = 2
+texture = ExtResource("4_y3qki")
+expand_mode = 1
+stretch_mode = 5
+
+[node name="VBoxContainer" type="VBoxContainer" parent="HBoxContainer/BG/ModInfo/Content/Basic"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 4
+theme_override_constants/separation = 0
+
+[node name="Name" type="Label" parent="HBoxContainer/BG/ModInfo/Content/Basic/VBoxContainer"]
+visible = false
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_fonts/font = ExtResource("5_g4n3g")
+theme_override_font_sizes/font_size = 20
+text = "TestMod"
+horizontal_alignment = 1
+
+[node name="NameFancy" type="RichTextLabel" parent="HBoxContainer/BG/ModInfo/Content/Basic/VBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 2
+theme_override_constants/line_separation = -5
+theme_override_fonts/normal_font = ExtResource("5_g4n3g")
+theme_override_font_sizes/bold_italics_font_size = 20
+theme_override_font_sizes/italics_font_size = 20
+theme_override_font_sizes/mono_font_size = 20
+theme_override_font_sizes/normal_font_size = 20
+theme_override_font_sizes/bold_font_size = 20
+bbcode_enabled = true
+text = "TestMod"
+fit_content = true
+scroll_active = false
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="HBoxContainer" type="HBoxContainer" parent="HBoxContainer/BG/ModInfo/Content/Basic/VBoxContainer"]
+layout_mode = 2
+size_flags_vertical = 8
+
+[node name="AuthorFancy" type="RichTextLabel" parent="HBoxContainer/BG/ModInfo/Content/Basic/VBoxContainer/HBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_constants/line_separation = -4
+theme_override_fonts/normal_font = ExtResource("6_3ajg8")
+theme_override_font_sizes/bold_italics_font_size = 11
+theme_override_font_sizes/italics_font_size = 11
+theme_override_font_sizes/mono_font_size = 11
+theme_override_font_sizes/normal_font_size = 11
+theme_override_font_sizes/bold_font_size = 11
+theme_override_styles/normal = SubResource("StyleBoxEmpty_f2uch")
+bbcode_enabled = true
+text = "fogwaves"
+fit_content = true
+scroll_active = false
+
+[node name="Author" type="Label" parent="HBoxContainer/BG/ModInfo/Content/Basic/VBoxContainer/HBoxContainer"]
+visible = false
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_fonts/font = ExtResource("6_3ajg8")
+theme_override_font_sizes/font_size = 13
+text = "fogwaves"
+text_overrun_behavior = 3
+
+[node name="Version" type="Label" parent="HBoxContainer/BG/ModInfo/Content/Basic/VBoxContainer/HBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 8
+size_flags_vertical = 8
+theme_override_colors/font_color = Color(0.745098, 0.745098, 0.745098, 1)
+theme_override_fonts/font = ExtResource("6_3ajg8")
+theme_override_font_sizes/font_size = 10
+theme_override_styles/normal = SubResource("StyleBoxEmpty_abu3k")
+text = "0.1.0"
+horizontal_alignment = 2
+
+[node name="ConfigMenu" type="Button" parent="HBoxContainer/BG/ModInfo/Content/Basic/VBoxContainer/HBoxContainer"]
+visible = false
+custom_minimum_size = Vector2(16, 16)
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+theme = ExtResource("2_mmkq0")
+theme_override_colors/icon_hover_color = Color(3, 3, 0, 1)
+theme_override_fonts/font = ExtResource("6_baj28")
+theme_override_font_sizes/font_size = 10
+theme_override_styles/focus = SubResource("StyleBoxEmpty_dtckt")
+theme_override_styles/hover = SubResource("StyleBoxEmpty_baj28")
+theme_override_styles/pressed = SubResource("StyleBoxEmpty_mmkq0")
+theme_override_styles/normal = SubResource("StyleBoxEmpty_0ynki")
+icon = ExtResource("8_baj28")
+icon_alignment = 2
+expand_icon = true
+
+[node name="Description" type="PanelContainer" parent="HBoxContainer/BG/ModInfo/Content"]
+custom_minimum_size = Vector2(0, 54)
+layout_mode = 2
+size_flags_vertical = 3
+theme_override_styles/panel = ExtResource("7_a00ef")
+
+[node name="DescriptionFancy" type="RichTextLabel" parent="HBoxContainer/BG/ModInfo/Content/Description"]
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_fonts/normal_font = ExtResource("6_3ajg8")
+theme_override_font_sizes/normal_font_size = 10
+bbcode_enabled = true
+text = "Description."
+
+[node name="Description" type="Label" parent="HBoxContainer/BG/ModInfo/Content/Description"]
+visible = false
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_constants/line_spacing = 0
+theme_override_fonts/font = ExtResource("6_3ajg8")
+theme_override_font_sizes/font_size = 10
+text = "Description."
+autowrap_mode = 3
+
+[node name="Enable" type="Button" parent="HBoxContainer"]
+visible = false
+layout_mode = 2
+size_flags_horizontal = 4
+theme = ExtResource("2_mmkq0")
+theme_override_font_sizes/font_size = 12
+icon = ExtResource("10_baj28")
+
+[node name="OrderButtons" type="VBoxContainer" parent="HBoxContainer"]
+layout_mode = 2
+theme = ExtResource("2_mmkq0")
+theme_override_constants/separation = -1
+alignment = 1
+
+[node name="OrderUp" type="Button" parent="HBoxContainer/OrderButtons"]
+layout_mode = 2
+size_flags_vertical = 3
+theme_override_font_sizes/font_size = 11
+icon = ExtResource("11_evhys")
+icon_alignment = 1
+
+[node name="OrderDown" type="Button" parent="HBoxContainer/OrderButtons"]
+layout_mode = 2
+size_flags_vertical = 3
+theme_override_font_sizes/font_size = 11
+icon = ExtResource("12_b6ua8")
+icon_alignment = 1
+
+[node name="AnimatedIcon" type="SubViewport" parent="."]
+transparent_bg = true
+size = Vector2i(48, 48)
+
+[node name="Icon" type="AnimatedSprite2D" parent="AnimatedIcon"]
+
+[node name="Camera2D" type="Camera2D" parent="AnimatedIcon"]
+
+[connection signal="pressed" from="HBoxContainer/Disable" to="." method="_on_disable_pressed"]
+[connection signal="pressed" from="HBoxContainer/BG/ModInfo/Content/Basic/VBoxContainer/HBoxContainer/ConfigMenu" to="." method="_on_config_button_pressed"]
+[connection signal="pressed" from="HBoxContainer/Enable" to="." method="_on_enable_pressed"]
+[connection signal="pressed" from="HBoxContainer/OrderButtons/OrderUp" to="." method="_on_order_up_pressed"]
+[connection signal="pressed" from="HBoxContainer/OrderButtons/OrderDown" to="." method="_on_order_down_pressed"]

@@ -1,0 +1,49 @@
+[gd_scene load_steps=5 format=3 uid="uid://b30hnvljn3y4r"]
+
+[ext_resource type="Script" uid="uid://bi7riu4aytask" path="res://mods/coolermods/scenes/config_options/checkbox.gd" id="1_4hvp1"]
+[ext_resource type="Texture2D" uid="uid://dwpv220b0lgfu" path="res://mods/coolermods/assets/Circle_16x16_4.png" id="2_50eer"]
+
+[sub_resource type="Gradient" id="Gradient_uf3s6"]
+colors = PackedColorArray(0, 0, 0, 0, 1, 1, 1, 0)
+
+[sub_resource type="GradientTexture2D" id="GradientTexture2D_4hvp1"]
+gradient = SubResource("Gradient_uf3s6")
+width = 16
+height = 16
+
+[node name="Checkbox" type="HBoxContainer" node_paths=PackedStringArray("redo_button", "input")]
+size_flags_vertical = 4
+mouse_filter = 0
+theme_override_constants/separation = 2
+script = ExtResource("1_4hvp1")
+redo_button = NodePath("ValueEdit/Redo")
+input = NodePath("ValueEdit/CheckButton")
+type = 1
+
+[node name="Name" type="Label" parent="."]
+layout_mode = 2
+size_flags_horizontal = 3
+text = "---"
+autowrap_mode = 3
+
+[node name="ValueEdit" type="HBoxContainer" parent="."]
+layout_mode = 2
+size_flags_horizontal = 10
+size_flags_vertical = 4
+theme_override_constants/separation = 4
+
+[node name="Redo" type="TextureButton" parent="ValueEdit"]
+layout_mode = 2
+size_flags_horizontal = 0
+size_flags_vertical = 4
+disabled = true
+texture_normal = ExtResource("2_50eer")
+texture_disabled = SubResource("GradientTexture2D_4hvp1")
+stretch_mode = 3
+
+[node name="CheckButton" type="CheckButton" parent="ValueEdit"]
+layout_mode = 2
+mouse_filter = 1
+
+[connection signal="pressed" from="ValueEdit/Redo" to="." method="_on_redo_pressed"]
+[connection signal="toggled" from="ValueEdit/CheckButton" to="." method="on_value_changed"]

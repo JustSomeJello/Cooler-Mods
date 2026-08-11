@@ -1,0 +1,8 @@
+[gd_scene load_steps=2 format=3 uid="uid://si7c183l8dds"]
+
+[ext_resource type="Script" uid="uid://ba1ucsqumeg5l" path="res://mods/coolermods/scenes/afterimage_generator.gd" id="1_g3e4q"]
+
+[node name="AfterImgGenerator" type="Node2D"]
+script = ExtResource("1_g3e4q")
+
+[node name="AfterImages" type="Node" parent="."]

@@ -1,0 +1,16 @@
+[gd_resource type="StyleBoxTexture" load_steps=2 format=3 uid="uid://pwnsfy68g50m"]
+
+[ext_resource type="Texture2D" uid="uid://cj40w7c7bkxu2" path="res://mods/coolermods/assets/desc_box_bevel.png" id="1_mwf1d"]
+
+[resource]
+resource_local_to_scene = true
+content_margin_left = 5.0
+content_margin_top = 4.0
+content_margin_right = 5.0
+content_margin_bottom = 4.0
+texture = ExtResource("1_mwf1d")
+texture_margin_left = 2.0
+texture_margin_top = 2.0
+texture_margin_right = 2.0
+texture_margin_bottom = 2.0
+modulate_color = Color(0.3, 0.3, 0.3, 0.607843)
